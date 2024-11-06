@@ -1,0 +1,23 @@
+.sidebar-info {
+    font-size: 14px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    &__row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 5px;
+        &:last-child {
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+    }
+    &_weight-500 {
+        font-weight: 500;
+    }
+}
+
+.text {
+    word-break: keep-all;
+}

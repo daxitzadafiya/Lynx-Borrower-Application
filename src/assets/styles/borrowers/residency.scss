@@ -1,0 +1,67 @@
+@import "./data.scss";
+
+.text-block {
+    padding-right: 110px;
+    &_right-margined {
+        margin-right: 80px;
+    }
+}
+
+.borrowers {
+    &__buttons {
+        padding: 24px 0;
+        margin-left: 45px;
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text-block {
+        padding-right: 70px;
+        &_right-margined {
+            margin-right: 40px;
+        }
+        &_left-margined {
+            margin-left: 10px;
+        }
+    }   
+}
+
+@media (max-width: 768px) {
+    .text-block {
+        padding-right: 33px;
+        &_right-margined {
+            margin-right: 0;
+        }
+        &__row {
+            &:last-child {
+                justify-content: space-between;
+            }
+        }
+    }   
+}
+
+@media (max-width: 450px) {
+    .text-block {
+        padding-right: 15px;
+        margin-top: 0;
+    }   
+    .borrowers {
+        &__buttons {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .borrowers {
+        &__buttons {
+            max-width: 152px;
+            flex-direction: column-reverse;
+            height: 110px;
+            padding: 10px 0;
+        }
+    }
+}

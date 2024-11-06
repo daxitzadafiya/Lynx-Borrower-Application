@@ -1,0 +1,56 @@
+.review-details {
+    &__row {
+        justify-content: flex-start;
+    }
+    &__title {
+        font-size: 18px;
+        padding: 5px 16px;
+        font-weight: 600;
+    }
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+.center-aligned {
+    text-align: center;
+}
+
+.pad-bot-2 {
+    padding-bottom: 2px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .sm-no-display {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .review-details {
+        &__col {
+            padding-bottom: 0;
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+    .subtitle {
+        padding-left: 15px;
+    }
+    .no-pad-mobile {
+        padding: 0 12px;
+    }
+    .center-aligned {
+        order: 3;
+        text-align: left;
+        padding-top: 0;
+    }
+}

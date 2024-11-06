@@ -1,0 +1,96 @@
+@import "./main.scss";
+
+.borrowers-military {
+    @include borrowers-generic;
+}
+
+.borrowers {
+    height: 460px;
+    margin-top: 150px;
+}
+
+.borrowers {
+    &__row {
+        align-items: center;
+    }
+    &__buttons {
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+    }
+    &__icon {
+        max-height: 100%
+    }
+}
+
+.military-icon {
+    height: 109px;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.borrowers-container {
+    height: 460px;
+}
+
+@media (max-width: 1024px) {
+    .borrowers-container {
+        max-height: 500px;
+        margin-top: 110px;
+    }
+    .borrowers {
+        &__row {
+            max-width: 600px;
+        }
+    }
+    .military-icon {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 760px) {
+    .borrowers-container {
+        max-height: 400px;
+        margin-top: 90px;
+        align-items: center;
+    }
+    .borrowers {
+        &__row {
+            flex-grow: 1;
+            max-width: 280px;
+            max-height: 190px;
+            justify-content: center;       
+        }
+        &__icon {
+            width: 90px;
+        }
+    }
+    .military-icon {
+        margin: 0;
+        max-width: 95px;
+        max-height: 90px;
+    }
+}
+
+@media (max-width: 350px) {
+    .borrowers-container {
+        max-width: 290px;
+    }
+    .borrowers-military {
+        max-width: 290px;
+    }
+    .borrowers {
+        &__message {
+            max-width: 290px;
+        }
+        &__row {
+            align-items: center;
+        }
+        &__buttons {
+            max-width: 152px;
+            flex-direction: column-reverse;
+            height: 90px;
+            margin-bottom: 10px;
+        }
+    }
+}

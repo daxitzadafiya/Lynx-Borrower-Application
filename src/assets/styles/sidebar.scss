@@ -1,0 +1,151 @@
+@import "./colors.scss";
+@import "./variables.scss";
+
+.sidebar {
+    max-width: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 88px);
+    box-sizing: border-box;
+    margin-top: 88px;
+    &__name {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px;
+        margin-top: 10px;
+    }
+    &__text {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    &__image {
+        position: fixed;
+        bottom: 0;
+        height: 90px;
+        min-width: calc(100% + 40px);
+        margin-left: -20px;
+        background-image: url("../assets/images/neighborhood-main.svg");
+        background-size: cover;
+    }
+    .v-navigation-drawer {
+        transform: translateX(0%) !important;
+        background-color: $left-nav-back-color;
+    }
+    .v-navigation-drawer--close {
+        visibility: visible;
+    }
+    &_hosted {
+        margin-top: 0;
+        height: 100%;
+    }
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__circle {
+        width: 13px;
+        height: 13px;
+        margin-right: 18px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 16px;
+            left: 8px;
+            width: 2px;
+            height: 17px;
+            background-color: $menu-gray;
+        }
+    }
+    &__title {
+        cursor: pointer;
+        color: $menu-gray;
+        font-size: 15px;
+        color: $left-nav-unselected-text-color;
+        display: flex;
+        align-items: center;
+        // &:hover {
+        //     color: $text-black;
+        // }
+    }
+    &__name {
+        font-size: 14px;
+        color: $menu-gray;
+        margin: 10px 0;
+        &:hover {
+            color: $text-black;
+        }
+        &:first-child {
+            margin-top: 15px;
+        }
+    }
+    &__button {
+        margin-top: 20px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &_active-name {
+        font-weight: 500;
+    }
+    &_active {
+        &::after {
+            background-color: $process-green;
+            top: 14px;
+            width: 3px;
+        }
+    }
+    &_no-line {
+        &::after {
+            width: 0;
+            height: 0;
+        }
+    }
+    &_passed {
+        &::after {
+            background-color: $process-green;
+            height: 24px;
+        }
+    }
+    &_long-line {
+        &::after {
+            height: 150px;
+        }
+    }
+}
+
+.active {
+    font-weight: 500;
+    font-size: 16px;
+}
+.side-nav-selected-color{
+    color: $left-nav-selected-text-color;
+}
+@media (max-width: $tablet-width) {
+    .sidebar {
+        position: fixed;
+        left: 0;
+        height: calc(100dvh - 76px) !important;
+        top: 76px !important;
+        margin-top: 76px !important;
+        &__image {
+            bottom: 30px;
+        }
+    }
+}
+
+.item-content {
+    padding: 5px 0 22px 3px;
+}
