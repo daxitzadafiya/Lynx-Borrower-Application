@@ -1,0 +1,209 @@
+@import './colors.scss';
+
+.main {
+    &__card-title {
+        padding: 0;
+    }
+    &__title {
+        padding: 25px 45px 25px 45px;
+        word-break: keep-all;
+    }
+    &__subtitle {
+        font-size: 16px;
+        word-break: keep-all;
+        padding-left: 10px;
+    }
+    &__card-subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 25px 0 25px 45px;
+    }
+    &__button {
+        width: 152px;
+        margin-left: 44px;
+        padding: 24px 0;
+    }
+    &_mobile-button {
+        display: none;
+    }
+}
+
+.picker-menu {
+    min-width: 270px !important;
+}
+
+.text-block {
+    margin: 30px 0;
+    padding-left: 35px;
+    .row {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.option-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    cursor: pointer;
+    position: relative;
+    &__title {
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 5px; 
+        &.active {
+            color: $tile-selected-outline-color !important;
+        }
+        &.inactive {
+            color: $tile-outline-color !important;
+        }
+    }
+    &__icon {
+        position: absolute;
+        z-index: 2;
+        top: -10px;
+        right: -10px;
+        color: $tile-selected-outline-color !important;
+        background: white;
+    }
+    &__image {
+        stroke: $tile-outline-color;
+        fill: $tile-outline-color;
+    }
+    &_selected {
+        border: 2px solid $tile-selected-outline-color;
+        background-color: white;
+        .option-card__image {
+            stroke: $tile-selected-outline-color;
+            fill: $tile-selected-outline-color;
+        }
+    }
+}
+
+.no-padding-col {
+    padding: 0;
+}
+
+.item-selector{
+    &__title{
+        margin: 0 auto;
+        padding: 20px;
+        word-break: break-word;
+        color: $primary-text-color !important;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+
+        @media (max-width: 1024px) {
+            font-size: 30px;
+        }
+        
+        @media (max-width: 760px) {
+            font-size: 19px;
+        }
+    }
+    &__subtitle{
+        margin: 0 auto;
+        padding: 0px 20px 20px 20px;
+        word-break: break-word;
+        color: $secondary-text-color !important;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        @media (max-width: 1024px) {
+            font-size: 24px;
+        }
+        
+        @media (max-width: 760px) {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .borrowers-data {
+        padding-top: 110px;
+    }
+    .borrowers {
+        &__title {
+            max-width: 650px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .text-block {
+        padding-left: 35px;
+        &__col {
+            padding-left: 0;
+        }
+        &_left-pad-12 {
+            padding-left: 12px;
+        }
+    }
+    .main {
+        &__title {
+            padding-left: 35px;
+        }
+        &__subtitle {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .text-block {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        &__col {
+            width: 100%;
+        }
+    }
+    .main {
+        &__title {
+            font-size: 18px;
+            padding: 15px;
+            line-height: 22px;
+        }
+        &__button {
+            margin: 0 auto;
+            margin-bottom: 20px;
+            width: 200px;
+        }
+        &__card-subtitle {
+            padding: 20px 12px;
+        }
+        &__subtitle {
+            line-height: 1.5;
+        }
+        &_mobile-button {
+            display: block;
+        }
+        &_desktop-button {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .text-block {
+        padding-left: 15px;
+        &__row {
+            margin: 0;
+        }
+    }
+}
+
+@mixin main-data {
+    padding-top: 30px;
+    @media (max-width: 1024px) {
+        margin-bottom: 30px;    
+    }
+}
+

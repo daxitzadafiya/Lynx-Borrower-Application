@@ -1,0 +1,123 @@
+.liabilities-table {
+    padding-right: 20px;
+}
+
+.main {
+    &__title {
+        margin-left: 35px;
+        margin-right: 5px;
+    }
+}
+
+#table {
+    margin-bottom: 40px;
+    &:deep(th){
+        padding: 10px;
+        color: $primary;
+    }
+    &:deep(td) {
+        padding: 10px;
+    }
+}
+
+.mr-2 {
+    cursor: pointer;
+}
+
+.v-input__slot {
+    margin-bottom: 0 !important;
+}
+
+.text-block {
+    max-height: 400px;
+    overflow-y: auto; 
+    padding-left: 35px;
+    &__row {
+        position: relative;
+    }
+    &__col {
+        min-width: 100px;
+    }
+    .bordered-row {
+        border-bottom: thin solid rgba(0, 0, 0, 0.12);
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    .right-justified {
+        text-align: right;
+        padding-right: 25px;
+        font-weight: 500;
+    }
+}
+
+.totals-row {
+    border-top: thin solid rgba(0, 0, 0, 0.12);
+    justify-content: flex-end;
+    margin: 0 25px;
+    &_bold {
+        font-weight: 500;
+    }
+    &_aligned-bottom {
+        align-items: flex-end;
+        height: 100%;
+    }
+}
+
+.data-title {
+    font-size: 12px;
+}
+
+.edit {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.last {
+    font-size: 12px;
+    padding-top: 0;
+    order: 6;
+}
+
+@media (max-width: 760px) {
+    .main {
+        &__title {
+            padding-right: 12px;
+            margin: 10px 0 5px;
+        }
+    }
+    .liabilities-table {
+        padding-right: 0;
+    }
+    .last {
+        order: 0;
+        font-size: 11px;
+    }
+    .data-title {
+        font-size: 11px;
+        opacity: 0.8;
+    }
+    .text-block {
+        padding: 12px;
+        &__row {
+            padding-top: 10px;
+        }
+        &__col {
+            min-width: 0;
+        }
+        .bottom-pad-xs {
+            padding-bottom: 5px;
+        }
+        .check-col {
+            margin-top: 8px;
+        }
+        .data-value {
+            padding-top: 0; 
+        }
+    }
+    .totals-row {
+        padding: 5px 15px 20px 15px;
+        margin: 0;
+    }
+}

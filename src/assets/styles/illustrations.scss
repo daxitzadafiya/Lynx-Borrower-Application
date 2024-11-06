@@ -1,0 +1,164 @@
+@import './colors.scss';
+
+path {
+  &[id^="skinTone"] {
+    &[fill] {
+      fill: $skinTone !important;
+    }
+    &[stroke] {
+      stroke: $skinTone !important;
+    }
+  }
+  &[id^="nose"] {
+    &[fill] {
+      fill: $nose !important;
+    }
+    &[stroke] {
+      stroke: $nose !important;
+    }
+  }
+  &[id^="faceDetails"] {
+    &[fill] {
+      fill: $faceDetails !important;
+    }
+    &[stroke] {
+      stroke: $faceDetails !important;
+    }
+  }
+  &[id^="hair"] {
+    &[fill] {
+      fill: $hair !important;
+    }
+    &[stroke] {
+      stroke: $hair !important;
+    }
+  }
+  &[id^="shoes"] {
+    &[fill] {
+      fill: $shoes !important;
+    }
+    &[stroke] {
+      stroke: $shoes !important;
+    }
+  }
+  &[id^="t-shirt"] {
+    &[fill] {
+      fill: $t-shirt !important;
+    }
+    &[stroke] {
+      stroke: $t-shirt !important;
+    }
+  }
+  &[id^="t-shirt2"] {
+    &[fill] {
+      fill: $t-shirt2 !important;
+    }
+    &[stroke] {
+      stroke: $t-shirt2 !important;
+    }
+  }
+  &[id^="pantsPrimary"] {
+    &[fill] {
+      fill: $pantsPrimary !important;
+    }
+    &[stroke] {
+      stroke: $pantsPrimary !important;
+    }
+  }
+  &[id^="pantsSecondary"] {
+    &[fill] {
+      fill: $pantsSecondary !important;
+    }
+    &[stroke] {
+      stroke: $pantsSecondary !important;
+    }
+  }
+  &[id^="beltPrimary"] {
+    &[fill] {
+      fill: $beltPrimary !important;
+    }
+    &[stroke] {
+      stroke: $beltPrimary !important;
+    }
+  }
+  &[id^="beltSecondary"] {
+    &[fill] {
+      fill: $beltSecondary !important;
+    }
+    &[stroke] {
+      stroke: $beltSecondary !important;
+    }
+  }
+  &[id^="shadow"] {
+    &[fill] {
+      fill: $shadow !important;
+    }
+    &[stroke] {
+      stroke: $shadow !important;
+    }
+  }
+  &[id^="objectPrimary"] {
+    &[fill] {
+      fill: $objectPrimary !important;
+    }
+    &[stroke] {
+      stroke: $objectPrimary !important;
+    }
+  }
+  &[id^="objectSecondary"] {
+    &[fill] {
+      fill: $objectSecondary !important;
+    }
+    &[stroke] {
+      stroke: $objectSecondary !important;
+    }
+  }
+  &[id^="objectTertiary"] {
+    &[fill] {
+      fill: $objectTertiary !important;
+    }
+    &[stroke] {
+      stroke: $objectTertiary !important;
+    }
+  }
+  &[id^="objectFourth"] {
+    &[fill] {
+      fill: $objectFourth !important;
+    }
+    &[stroke] {
+      stroke: $objectFourth !important;
+    }
+  }
+  &[id^="backgroundLight"] {
+    &[fill] {
+      fill: $backgroundLight !important;
+    }
+    &[stroke] {
+      stroke: $backgroundLight !important;
+    }
+  }
+  &[id^="backgroundExtraLight"] {
+    &[fill] {
+      fill: $backgroundExtraLight !important;
+    }
+    &[stroke] {
+      stroke: $backgroundExtraLight !important;
+    }
+  }
+  &[id^="backgroundWhite"] {
+    &[fill] {
+      fill: $backgroundWhite !important;
+    }
+    &[stroke] {
+      stroke: $backgroundWhite !important;
+    }
+  }
+  &[id^="plants"] {
+    &[fill] {
+      fill: $plants !important;
+    }
+    &[stroke] {
+      stroke: $plants !important;
+    }
+  }
+}

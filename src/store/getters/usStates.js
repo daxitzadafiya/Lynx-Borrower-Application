@@ -1,0 +1,1 @@
+export const getAllUsStates = state => state.usStates;

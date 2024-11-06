@@ -1,0 +1,27 @@
+.text-block {
+    padding-right: 35px;
+    margin: 10px 0;
+}
+
+@media (max-width: 1024px) {
+    .text-block {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 760px) {
+    .main {
+        &__title {
+            padding-left: 12px;
+        }
+    }
+    .text-block {
+        margin-top: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+        &__col {
+            padding-top: 20px;
+        }
+    }
+}

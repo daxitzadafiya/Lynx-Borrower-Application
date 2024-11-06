@@ -1,0 +1,181 @@
+@import "@/assets/styles/borrowers/data.scss";
+
+.borrowers-data {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.borrowers {
+    &__title {
+        font-size: 18px;
+        padding: 5px 15px;
+        margin: 30px;
+        width: 100%;
+    }
+}
+
+.text-block {
+    padding: 0 35px;
+    margin: 0;
+    &__radios {
+        justify-content: space-around;
+    }
+    &_bottom-margined {
+        margin-bottom: 20px;
+    }
+}
+
+.review-header {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    &__title {
+        font-size: 30px;
+        margin-left: 10px;
+        font-weight: 500;
+    }
+    @media (max-width: 1024px) {
+        margin-bottom: 0;
+        &__title {
+            font-size: 28px;
+        }
+        &__image {
+            width: 42px;
+        }
+    }
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 24px;
+        }
+    }
+    @media (max-width: 760px) {
+        margin-bottom: 10px;
+        align-items: flex-start;
+        &__title {
+            font-size: 16px;
+        }
+        &__image {
+            width: 32px;
+        }
+    }
+}
+
+.review-button {
+    display: none;
+    margin-bottom: 15px;
+    &__title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+}
+
+.check {
+    margin-right: 5px;
+}
+
+.label {
+    font-size: 16px;
+    max-width: 90%;
+}
+
+.calendar {
+    margin-left: 20px;
+}
+
+.picker-menu {
+    min-width: 270px !important;
+}
+
+.radio-block {
+    text-align: center;
+    &__label {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .review-button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .borrowers-data {
+        padding-top: 80px;
+        @media screen and (max-width: 760px) {
+            padding-top: 24px;
+        }
+    }
+    .borrowers {
+        &__title {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .borrowers {
+        &__title {
+            margin: 30px 25px;
+        }
+    }
+    .text-block {
+        padding: 0 25px;
+    }
+    .calendar {
+        margin-left: 0;
+    }
+    .label {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 760px) {
+    .borrowers {
+        &__title {
+            display: inline-block;
+            margin: 30px 0 20px;
+            padding: 10px 0 10px 15px;
+        }
+    }
+    .left-padding-sm-10 {
+        padding-left: 10px;
+    }
+    .text-block {
+        padding: 0 15px;
+        &__radios {
+            margin-top: 20px;
+            justify-content: flex-start;
+        }
+        &__radio {
+            margin-right: 20px;
+        }
+    }
+    .sm-margined {
+        margin: 15px 0;
+        .text-block__row {
+            margin-bottom: 5px;
+        }
+    }
+    .radio-block {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        align-items: flex-start;
+        padding-left: 20px;
+        &__label {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .sm-no-margin {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .radio-block {
+        padding-left: 0;
+    }
+}
